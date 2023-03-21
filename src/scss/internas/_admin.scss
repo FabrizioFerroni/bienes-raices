@@ -1,0 +1,73 @@
+.alerta {
+    // border-radius: .8rem;
+    color: $blanco;
+    padding: .5rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-weight: $bold;
+    display: flex;
+    justify-content: space-between;
+    &.error {
+        background-color: $rojo;
+    }
+    &.exito {
+        align-items: center;
+        background-color: $verde;
+    }
+    span {
+        cursor: pointer;
+        &::selection {
+            display: none;
+        }
+        &:hover {
+            color: $grisOscuro;
+        }
+    }
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    thead {
+        background-color: $verde;
+        tr {
+            border: 1px solid $gris;
+        }
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+    tbody {
+        text-align: center;
+        img {
+            margin: auto;
+        }
+        // color: $gris;
+        tr {
+            border: 1px solid $gris;
+        }
+        td {
+            padding-right: 2rem;
+        }
+    }
+    .imagen-tabla {
+        width: 10rem;
+    }
+}
+
+.imagen-small {
+    width: 30rem;
+    // margin-bottom: 2rem;
+    margin: 2rem auto;
+}
+
+.no-anuncio {
+    font-weight: $bold;
+    padding: 2rem 0;
+    // background-color: darken($gris, 15);
+    background-color: lighten($gris, 5);
+}
